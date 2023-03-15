@@ -1,0 +1,53 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  참고: 다음 <META>요소를 <HEAD> 페이지에 추가하십시오.  필요한 경우 매개 변수를 수정하여 HTML 페이지의 문자   -->
+<!--  집합을 지정하십시오.                                                             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+    <input type=hidden name="orgid" value="00D2w00000RJHyg">
+    <input type=hidden name="retURL" value="http://www.dkbmc.com">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  참고: 이러한 필드는 선택적 디버깅 요소입니다. 디버그 모드에서 테스트하려면 이러한 줄의 주석 처리를 제거하십시오.        -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="daesung.lee@dkbmc.com">   -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <label for="name">연락처 이름</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+    <label for="email">이메일</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+    <label for="phone">전화</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+    <label for="subject">제목</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+    <label for="description">설명</label><textarea name="description"></textarea><br>
+
+    <label for="company">회사</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+    <label for="type">유형</label><select  id="type" name="type"><option value="">--없음--</option><option value="Mechanical">Mechanical</option>
+    <option value="Electrical">Electrical</option>
+    <option value="Electronic">Electronic</option>
+    <option value="Structural">Structural</option>
+    <option value="Other">Other</option>
+</select><br>
+
+    <label for="reason">사례 이유</label><select  id="reason" name="reason"><option value="">--없음--</option><option value="Installation">Installation</option>
+    <option value="Equipment Complexity">Equipment Complexity</option>
+    <option value="Performance">Performance</option>
+    <option value="Breakdown">Breakdown</option>
+    <option value="Equipment Design">Equipment Design</option>
+    <option value="Feedback">Feedback</option>
+    <option value="Other">Other</option>
+</select><br>
+
+    <input type="submit" name="submit">
+
+</form>

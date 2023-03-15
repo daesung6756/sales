@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" href="css/layout.css" >
+    <link rel="stylesheet" href="css/common.css" >
+    <style>
+        body {padding:1rem;}
+        .quiz {line-height:1.4;}
+        .quiz li {position:relative;}
+        .quiz li + li {padding-top:.5rem;margin-top:.5rem;}
+        .quiz li + li:after {content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:#ddd;}
+        .quiz .title {color: #24245e;}
+        .quiz .title + .list {margin-top:.5rem;color:#666;line-height:1.2;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="dumpList"></div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/dumps.js"></script>
+</body>
+</html>
